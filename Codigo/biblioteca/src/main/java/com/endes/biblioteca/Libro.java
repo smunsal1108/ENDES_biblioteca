@@ -1,10 +1,16 @@
 package com.endes.biblioteca;
 
+import java.sql.Date;
 import java.util.List;
 
-public class Libro {
+public abstract class Libro {
     private String isbn;
     private String title;
+	private String resumen;
+	private String editorial;
+	private Date fechaPublicacion;
+    
+    
     private List<Autor> autores;
 	
     public Libro(String isbn, String title, List<Autor> autores) {
