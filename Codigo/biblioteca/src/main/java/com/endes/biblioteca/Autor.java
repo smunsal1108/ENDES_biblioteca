@@ -35,17 +35,23 @@ public class Autor {
     	this.librosEscritos = librosEscritos;
     }
     
+    /**
+     * Obtiene el nombre del autor.
+     * 
+     * @return El nombre del autor.
+     */
+    
+    public String getName() {
+		return name;
+	}
+    
+    public void setName(String name) {
+		this.name = name;
+	}
+    
     public Autor(String name, String biography) {
 		this.name = name;
 		this.biography = biography;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	public String getBiography() {
