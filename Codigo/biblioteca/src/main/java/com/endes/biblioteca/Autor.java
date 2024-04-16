@@ -25,6 +25,16 @@ public class Autor {
     	return librosEscritos;
     }
     
+    /**
+     * Establece la lista de libros escritos por el autor.
+     * 
+     * @param librosEscritos Una lista de objetos {@link Libro} que representa los libros escritos por el autor.
+     */
+    
+    public void setLibrosEscritos(List<Libro> librosEscritosLibros) {
+    	this.librosEscritos = librosEscritos;
+    }
+    
     public Autor(String name, String biography) {
 		this.name = name;
 		this.biography = biography;
